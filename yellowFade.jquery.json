@@ -1,10 +1,10 @@
 {
   "name": "yellowFade",
   "title": "jQuery yellowFade",
-  "description": "",
+  "description": "plugin for yellow fade animation similar to jQuery UI",
   "keywords": [
-    "event",
-    "appear"
+    "yellow",
+    "fade"
   ],
   "version": "1.0.0",
   "author": {
@@ -24,6 +24,7 @@
     }
   ],
   "homepage": "https://github.com/morr/jquery.yellowFade",
+  "demo": "http://morr.github.com/yellow_fade.html",
   "dependencies": {
     "jquery": ">=1.5"
   }

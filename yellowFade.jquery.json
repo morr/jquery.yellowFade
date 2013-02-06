@@ -1,0 +1,30 @@
+{
+  "name": "yellowFade",
+  "title": "jQuery yellowFade",
+  "description": "",
+  "keywords": [
+    "event",
+    "appear"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Andrey Sidorov",
+    "email" : "takandar@gmail.com",
+  },
+  "maintainers": [
+    {
+      "name": "Andrey Sidorov",
+      "email": "takandar@gmail.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "https://github.com/morr/jquery.yellowFade",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}

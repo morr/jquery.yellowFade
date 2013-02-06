@@ -26,6 +26,7 @@
   "homepage": "https://github.com/morr/jquery.yellowFade",
   "demo": "http://morr.github.com/yellow_fade.html",
   "dependencies": {
-    "jquery": ">=1.5"
+    "jquery": ">=1.5",
+    "jquery-color": ">=2.0"
   }
 }

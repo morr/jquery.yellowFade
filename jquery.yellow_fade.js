@@ -9,9 +9,11 @@
  * Version: 1.0.0
  */
 (function($) {
-  $.fn.yellowFade = function() {
+  $.fn.yellowFade = function(opts) {
     return this.each(function() {
       var $this = $(this);
+      var options = $.extend({}, $.fn.yellowFade.defaults, opts);
+
       $this.stop(true, true);
       var original_color = $this.css('background-color');
       var transparent = false;
@@ -22,14 +24,18 @@
       if (original_color.match(/^rgb\(/)) {
         original_color = rgb2hex(original_color);
       }
-      $this.css('background-color', '#ffffcc').animate({'background-color': original_color}, 1500, function() {
-          if (transparent) {
-            $(this).css('background-color', 'transparent');
-          }
-        });
+      $this.css('background-color', options.background).animate({'background-color': original_color}, 1500, function() {
+        if (transparent) {
+          $(this).css('background-color', 'transparent');
+        }
+      });
     });
 
   }
+
+  $.fn.yellowFade.defaults = {
+    background: '#ffffcc'
+  };
 
   function rgb2hex(rgb) {
     var hexDigits = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
